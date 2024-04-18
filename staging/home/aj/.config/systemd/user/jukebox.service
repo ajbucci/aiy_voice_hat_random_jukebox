@@ -8,7 +8,7 @@ Requires=pulseaudio.service
 Type=simple
 ExecStart=/usr/bin/env python3 /home/aj/jukebox.py
 Restart=on-failure
-RestartSec=10  # restarts the service 10 seconds after a failure
+RestartSec=5
 
 [Install]
 WantedBy=default.target
