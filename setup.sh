@@ -27,6 +27,7 @@ sudo apt-get install -y git python3-pip mpg123
 sudo mv staging/boot/config.txt /boot/config.txt
 mv staging/home/aj/jukebox.py /home/aj/jukebox.py
 chmod +x /home/aj/jukebox.py
+mkdir -p /home/aj/.config/systemd/user
 mv staging/home/aj/.config/systemd/user/jukebox.service /home/aj/.config/systemd/user/jukebox.service
 systemctl --user daemon-reload
 systemctl --user enable jukebox.service
