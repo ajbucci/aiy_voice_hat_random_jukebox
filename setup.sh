@@ -31,5 +31,8 @@ mv staging/home/aj/.config/systemd/user/jukebox.service /home/aj/.config/systemd
 systemctl --user daemon-reload
 systemctl --user enable jukebox.service
 
+#### create Music directory to store the mp3's that the jukebox will shuffle
+mkdir /home/aj/Music
+
 #### reboot
 sudo reboot
